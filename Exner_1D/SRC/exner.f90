@@ -15,7 +15,6 @@ program exner
 &            erreur_L2, erreur_Linf, xi_gauss, b_h, b_ex, t_debut, t_fin, b_min, b_max
     real(kind = pr), dimension(2)                   :: b_L_i, b_R_i
     real(kind = pr), dimension(0:p)                 :: B_i_loc, Beta_i
-    real(kind = pr), dimension(1:N_G)               :: test
     real(kind = pr), dimension(:), allocatable      :: Li_racines, wi_legendre, omega_i
     real(kind = pr), dimension(:, :), allocatable   :: Phi_i, Phi_xi_i, x_gauss, B_i, h_ini, u_ini, b_ini,  &
 &            h_tilde, u_tilde, b_tilde
@@ -101,19 +100,6 @@ program exner
     B_i_loc = B_i(:, 1)
 
     call make_Beta_i(dx, wi_legendre, Phi_i, Phi_xi_i, B_i_loc, b_L_i, b_R_i, Beta_i)
-
-    test = 0.0_pr
-
-! Boucle sur les points de Gauss (on veut la valeur à chaque point j)
-    do j = 1, N_G
-        ! Somme sur toutes les fonctions de base (de 0 à p)
-        do k = 0, p
-            test(j) = test(j) + Beta_i(k) * Phi_i(k, j)
-        end do
-        
-        ! Ici, test(j) contient la vraie valeur physique de nabla_b au point j
-        print *, "Au point de Gauss ", j, " : nabla_b = ", test(j)
-    end do
 
     call make_omega_i(dx, wi_legendre, Phi_i, Phi_xi_i, B_i, omega_i)
     print *, "================================================================"
