@@ -1,0 +1,52 @@
+reset
+
+# ==============================================================================
+# CONFIGURATION EXPORT PROFESSIONNEL (BOÎTE COMPACTE)
+# ==============================================================================
+set terminal pdfcairo size 8.5cm,6.5cm font "Arial,11"
+set output "~/Documents/Exner/Rapport/PNG/Manufacturee/vr_n_x_40.pdf"
+
+set xrange [0:1]
+set autoscale y
+set grid
+
+# ==============================================================================
+# CONFIGURATION DE LA FENÊTRE GRAPHIQUE (Ajustée pour la petite boîte)
+# ==============================================================================
+set bmargin 3.5
+set lmargin 9.5
+
+set xlabel "x" offset 0, -0.15
+set ylabel "b(x)" offset -0.15, 0
+
+# ==============================================================================
+# POSITIONNEMENT PRÉCIS DE LA LÉGENDE
+# ==============================================================================
+# Option A : En haut à droite (souvent libre sur cette double période)
+#set key top right box
+# Option B : Si tu veux la placer manuellement à des coordonnées (X, Y) précises :
+set key at 0.45, 0.20 box
+set key font "Arial, 9"       # Légèrement réduit pour la boîte compacte
+set key spacing 1.1
+
+# Palette de couleurs pro (calquée sur Fernandez-Nieto)
+color_init  = "black"
+color_t05   = "blue"
+color_t10   = "red"
+
+# ==============================================================================
+# DÉFINITION DE LA SOLUTION ANALYTIQUE EXACTE
+# ==============================================================================
+b_exact(x, t) = sin(2.0 * pi * (x - t))
+pi = 3.141592653589793
+
+# ==============================================================================
+# TRACÉ COMPARATIF
+# ==============================================================================
+plot b_exact(x, 0.5) with lines lw 2 dt 2 lc rgb color_t05 title "Analytique t=0.5", \
+     "./SORTIE/b_0.500.dat" u 1:2 with points lw 2.5 pt 1 ps 0.5 lc rgb color_t05 title "DG t=0.5", \
+     \
+     b_exact(x, 1.0) with lines lw 2 dt 2 lc rgb color_t10 title "Analytique t=1.0", \
+     "./SORTIE/b_1.000.dat" u 1:2 with points lw 2.5 pt 1 ps 0.5 lc rgb color_t10 title "DG t=1.0"
+
+unset output

@@ -1,0 +1,47 @@
+reset
+
+# ==============================================================================
+# CONFIGURATION EXPORT PROFESSIONNEL (BOÎTE COMPACTE 2D)
+# ==============================================================================
+set terminal pdfcairo size 22cm,12cm font "Arial,14"
+set output "/mnt/c/Users/FlowUp/Documents/3A/Toulon/Rapport/PNG/Manufacturee/berthon_vr_n_x_40_2D.pdf"
+
+set bmargin 3.0
+set tmargin 2.0
+set lmargin 8.0
+set rmargin 4.0
+
+set xrange [0:7]
+set yrange [0:7]
+set zrange [-0.1:0.35]
+set grid
+
+# Angles de vue (rotation 65°, élévation 30°)
+set view 65, 40
+
+# ==============================================================================
+# MARGES ET ÉTIQUETTES DES AXES
+# ==============================================================================
+
+set xlabel "x" offset 0, -0.5
+set ylabel "y" offset -0.5, 0
+set zlabel "b(x,y)" offset -0.5, 0
+
+# ==============================================================================
+# LÉGENDE
+# ==============================================================================
+set key at screen 0.9, 0.95 box
+set key font "Arial, 12"
+set key spacing 1.2
+
+# Palette de couleurs
+color_t025 = "blue"
+color_t050 = "red"
+
+# ==============================================================================
+# TRACÉ SOLUTION NUMÉRIQUE 2D
+# ==============================================================================
+splot "./SORTIE/b_0.000.dat" u 1:2:3 with dots lc rgb color_t025 title "DG t=0s", \
+      "./SORTIE/b_7.000.dat" u 1:2:3 with dots lc rgb color_t050 title "DG t=7s"
+
+unset output

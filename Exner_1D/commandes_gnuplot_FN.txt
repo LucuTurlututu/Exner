@@ -1,0 +1,57 @@
+reset
+
+# ==============================================================================
+# CONFIGURATION EXPORT PROFESSIONNEL (GRAND FORMAT SINGLE GRAPH)
+# ==============================================================================
+# Largeur de 22cm pour le rapport, hauteur proportionnelle pour un beau ratio
+set terminal pdfcairo size 22.0cm,12.0cm font "Arial,14"
+set output "~/Documents/Exner/Rapport/PNG/fernandez_nieto.pdf"
+
+set grid
+set encoding utf8
+
+# ==============================================================================
+# CONFIGURATION DE LA FENÊTRE GRAPHIQUE (Marges aérées pour grand format)
+# ==============================================================================
+set bmargin 4.0
+set lmargin 10.0
+set tmargin 2.0
+set rmargin 3.0
+
+set xlabel "x" offset 0, -0.2
+set ylabel "b(x)" offset -0.2, 0
+
+# Échelle automatique pour s'adapter parfaitement au domaine de Fernandez-Nieto
+set autoscale
+
+# ==============================================================================
+# LÉGENDE ET COULEURS
+# ==============================================================================
+set key bottom left box           # Positionnée en bas à gauche pour ce cas test
+set key font "Arial, 12"
+set key spacing 1.2
+
+# Code couleur harmonieux (Noir pour l'initial, puis dégradé temporel)
+color_init  = "black"
+color_t600  = "blue"
+color_t1200 = "red"
+color_t2000 = "orange"
+
+# ==============================================================================
+# TRACÉ (Styles calqués sur le cas de Long)
+# ==============================================================================
+# - Solutions numériques (DG) : points isolés (with points lw 3 pt 1)
+# - Solutions semi-analytiques : lignes pointillées (with lines dt 2 lw 3)
+
+plot "./SORTIE/b_0.000.dat" u 1:2 with lines lw 3 lc rgb color_init title "Initial", \
+     \
+     "./SORTIE/b_600.000.dat" u 1:3 with lines dt 2 lw 3 lc rgb color_t600 title "Analytique t=600", \
+     "./SORTIE/b_600.000.dat" u 1:2 with points lw 3 pt 1 lc rgb color_t600 title "DG t=600", \
+     \
+     "./SORTIE/b_1200.000.dat" u 1:3 with lines dt 2 lw 3 lc rgb color_t1200 title "Analytique t=1200", \
+     "./SORTIE/b_1200.000.dat" u 1:2 with points lw 3 pt 1 lc rgb color_t1200 title "DG t=1200", \
+     \
+     "./SORTIE/b_2000.000.dat" u 1:3 with lines dt 2 lw 3 lc rgb color_t2000 title "Analytique t=2000", \
+     "./SORTIE/b_2000.000.dat" u 1:2 with points lw 3 pt 1 lc rgb color_t2000 title "DG t=2000"
+
+unset output

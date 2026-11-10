@@ -1,0 +1,103 @@
+reset
+
+# ==============================================================================
+# CONFIGURATION EXPORT PROFESSIONNEL (BOÎTE COMPACTE)
+# ==============================================================================
+set terminal pdfcairo size 8.5cm,6.5cm font "Arial,11"
+set output "~/Documents/Exner/Rapport/PNG/Berthon/vr_n_x_40.pdf"
+
+set autoscale
+set grid
+
+# ==============================================================================
+# CONFIGURATION DE LA FENÊTRE GRAPHIQUE (Ajustée pour la petite boîte)
+# ==============================================================================
+set bmargin 3.5
+set lmargin 9.5
+
+set xlabel "x" offset 0, -0.15
+set ylabel "b(x)" offset -0.15, 0
+
+set key bottom right box
+set key font "Arial, 9"
+
+set xrange [0:7]
+set yrange [-0.1:0.35]
+
+# ==============================================================================
+# PARAMÈTRES PHYSIQUES COMMUNS
+# ==============================================================================
+g        = 9.81          # Gravité
+alpha    = 0.005         # Paramètre alpha
+beta     = 0.005         # Paramètre beta
+Q        = 1.0           # Débit d'eau stable q
+s_rel    = 2.65          # Densité relative du sédiment (rho_s/rho_f)
+d_50     = 0.0005        # Diamètre des grains (5.e-4)
+C_B      = 1.0           # Constante d'intégration pour la hauteur de sédiment
+theta_c  = 0.047         # Seuil de Shields critique
+
+color_0s = "red"         # Rouge pour l'état initial
+color_7s = "blue"        # Bleu pour l'état final à t=7s
+
+# ==============================================================================
+# CHOIX DE LA CONFIGURATION (Décommentez la loi à tracer)
+# ==============================================================================
+
+# --- OPTION A : LOI DE GRASS ---
+# nom_loi   = "Grass"
+# A_Berthon = 0.005
+# u_cr_sq   = 0.0
+# mode_loi  = 1            # Indicateur pour la formule standard (Grass/MPM)
+
+# --- OPTION B : LOI DE MPM ---
+# nom_loi   = "Meyer-Peter & Müller"
+# A_Berthon = 0.005
+# f_Berthon = 0.37415
+# u_cr_sq   = theta_c * (8.0 * (s_rel - 1.0) * g * d_50) / f_Berthon
+# mode_loi  = 1            # Indicateur pour la formule standard (Grass/MPM)
+
+# --- OPTION C : LOI DE VAN RIJN (Double Calibration) ---
+nom_loi       = "Van Rijn"
+f_Berthon_leq = 73.65
+f_Berthon_geq = 236.91
+A_Berthon_leq = 0.005
+A_Berthon_geq = 0.005
+g_prime_dim   = 8.0 * g * (s_rel - 1.0) * d_50
+u_cr_sq_leq   = theta_c * g_prime_dim / f_Berthon_leq
+u_cr_sq_geq   = theta_c * g_prime_dim / f_Berthon_geq
+mode_loi      = 2          # Indicateur pour basculer sur les fonctions Van Rijn
+
+# ==============================================================================
+# FORMULATION ANALYTIQUE GÉNÉRALE (BERTHON ET AL.)
+# ==============================================================================
+
+# --- Branche Standard (Grass / MPM) ---
+ue_carre_std(x)  = ((alpha * x + beta) / A_Berthon)**(2.0/3.0)
+u_vitesse_std(x) = sqrt(ue_carre_std(x) + u_cr_sq)
+
+# --- Branche Van Rijn par morceaux ---
+# 1. On teste d'abord l'hypothèse du régime leq
+ue_carre_leq(x)  = ((alpha * x + beta) / A_Berthon_leq)**(1.0 / 2.1)
+u_temp(x)        = sqrt(ue_carre_leq(x) + u_cr_sq_leq)
+theta_test(x)    = (f_Berthon_leq * u_temp(x)**2) / g_prime_dim
+T_test(x)        = (theta_test(x) - theta_c) / theta_c
+
+# 2. Vitesse finale VR : si T_test < 3.0 on valide leq, sinon on applique geq
+u_vitesse_vr(x)  = (T_test(x) < 3.0) ? u_temp(x) : sqrt(((alpha * x + beta) / A_Berthon_geq)**(2.0/3.0) + u_cr_sq_geq)
+
+# --- Aiguillage de la vitesse selon la loi choisie ---
+u_vitesse(x)     = (mode_loi == 1) ? u_vitesse_std(x) : u_vitesse_vr(x)
+
+# --- Calcul du profil sédimentaire ---
+zb0(x)           = - (u_vitesse(x)**3 + 2.0 * g * Q) / (2.0 * g * u_vitesse(x)) + C_B
+zb(x, t)         = - alpha * t + zb0(x)
+
+# ==============================================================================
+# TRACÉ UNIQUE GÉNÉRIQUE
+# ==============================================================================
+plot zb(x, 0.0) with lines lw 2 dt 2 lc rgb color_0s title "Analytique t=0", \
+     "./SORTIE/b_0.000.dat" using 1:2 with points lw 2 pt 1 ps 0.5 lc rgb color_0s title "DG t=0", \
+     zb(x, 7.0) with lines lw 2 dt 2 lc rgb color_7s title "Analytique t=7", \
+     "./SORTIE/b_7.000.dat" using 1:2 with points lw 2 pt 1 ps 0.5 lc rgb color_7s title "DG t=7"
+
+unset output

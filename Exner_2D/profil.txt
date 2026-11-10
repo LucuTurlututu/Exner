@@ -1,0 +1,578 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 11.80     13.29    13.29  1465801     0.01     0.03  __mod_interpolation_MOD_make_m_i
+ 11.55     26.29    13.00 91741936     0.00     0.00  __mod_qte_physiques_MOD_h
+ 10.29     37.88    11.59  1625401     0.01     0.01  __mod_interpolation_MOD_make_beta_i
+  9.34     48.40    10.52 143373802     0.00     0.00  __mod_qte_physiques_MOD_theta_prime
+  8.77     58.28     9.88 322222462     0.00     0.00  __mod_fonctions_MOD_m
+  6.47     65.57     7.29 91474255     0.00     0.00  __mod_base_MOD_make_base_phy
+  5.02     71.22     5.65 414775087     0.00     0.00  __mod_qte_physiques_MOD_norme_2
+  3.96     75.68     4.46 213691871     0.00     0.00  __mod_qte_physiques_MOD_b
+  3.37     79.47     3.79 42064249     0.00     0.00  __mod_fonctions_MOD_c_delta
+  3.37     83.26     3.79  1453600     0.00     0.01  __mod_interpolation_MOD_cholesky
+  3.01     86.65     3.39   703065     0.00     0.02  __mod_interpolation_MOD_make_i_i_ef
+  2.98     90.01     3.36 10528759     0.00     0.00  __mod_interpolation_MOD_reconstruction_locale
+  2.86     93.23     3.22 47099365     0.00     0.00  __mod_fonctions_MOD_g
+  2.48     96.02     2.79 91161311     0.00     0.00  __mod_qte_physiques_MOD_u
+  1.98     98.25     2.23 21880787     0.00     0.00  __mod_fonctions_MOD_r_tilde
+  1.57    100.02     1.77 53074061     0.00     0.00  __mod_base_MOD_hat_phi_i
+  1.41    101.61     1.59   711752     0.00     0.02  __mod_interpolation_MOD_make_i_i_s
+  1.08    102.83     1.22 35879960     0.00     0.00  __mod_fonctions_MOD_lambda_dv
+  1.08    104.05     1.22  2774160     0.00     0.01  __mod_interpolation_MOD_flux_rusanov
+  1.05    105.23     1.18 22876147     0.00     0.00  __mod_fonctions_MOD_s
+  0.86    106.20     0.97 90638135     0.00     0.00  __mod_qte_physiques_MOD_grass
+  0.84    107.15     0.95 39155993     0.00     0.00  __mod_fonctions_MOD_partial_q_g
+  0.80    108.05     0.90 43388867     0.00     0.00  __mod_fonctions_MOD_q_d
+  0.78    108.93     0.88   656242     0.00     0.02  __mod_interpolation_MOD_make_i_i_r_tilde
+  0.65    109.66     0.73 19633471     0.00     0.00  __mod_tri_maillage_MOD_get_s_i_1_back
+  0.61    110.35     0.69 46324861     0.00     0.00  __mod_qte_physiques_MOD_t_s
+  0.53    110.95     0.60   624512     0.00     0.03  __mod_interpolation_MOD_make_i_i_vf
+  0.51    111.52     0.57                             __mod_resolution_MOD_make_l_i_e
+  0.46    112.04     0.52 19067803     0.00     0.00  __mod_base_MOD_hat_phi_f
+  0.44    112.54     0.50                             _init
+  0.04    112.58     0.04   393357     0.00     0.00  __mod_cl_MOD_periodique
+  0.01    112.59     0.01   704915     0.00     0.05  __mod_resolution_MOD_make_l_i_i
+  0.01    112.60     0.01                             __mod_resolution_MOD_point_fixe
+  0.00    112.60     0.00      902     0.00     0.00  __mod_resolution_MOD_find_dt
+  0.00    112.60     0.00      902     0.00     0.00  __mod_resolution_MOD_ssp
+  0.00    112.60     0.00      564     0.00     0.00  __mod_legendre_MOD_legendre_xi_1d
+  0.00    112.60     0.00      489     0.00     0.00  __mod_legendre_MOD_jacobi_1d
+  0.00    112.60     0.00      450     0.00     0.00  __mod_legendre_MOD_legendre_1d
+  0.00    112.60     0.00      405     0.00     0.00  __mod_legendre_MOD_legendre_2d
+  0.00    112.60     0.00      204     0.00     0.00  __mod_legendre_MOD_dubiner_2d
+  0.00    112.60     0.00      114     0.00     0.00  __mod_legendre_MOD_dubiner_eta_2d
+  0.00    112.60     0.00      114     0.00     0.00  __mod_legendre_MOD_dubiner_xi_2d
+  0.00    112.60     0.00        1     0.00    14.91  MAIN__
+  0.00    112.60     0.00        1     0.00     0.00  __mod_base_MOD_make_base_ref
+  0.00    112.60     0.00        1     0.00     0.00  __mod_base_MOD_make_quad_ref
+  0.00    112.60     0.00        1     0.00     0.00  __mod_interpolation_MOD_make_b_i
+  0.00    112.60     0.00        1     0.00     0.00  __mod_interpolation_MOD_make_k_i_std
+  0.00    112.60     0.00        1     0.00     0.00  __mod_interpolation_MOD_make_m_i_std
+  0.00    112.60     0.00        1     0.00     0.00  __mod_legendre_MOD_poids_legendre_1d
+  0.00    112.60     0.00        1     0.00     0.00  __mod_legendre_MOD_quadrature_dunavant
+  0.00    112.60     0.00        1     0.00     0.00  __mod_legendre_MOD_racines_legendre_1d
+  0.00    112.60     0.00        1     0.00     0.24  __mod_maillage_MOD_aire
+  0.00    112.60     0.00        1     0.00     0.00  __mod_maillage_MOD_cl_arete
+  0.00    112.60     0.00        1     0.00     0.00  __mod_maillage_MOD_connectivite
+  0.00    112.60     0.00        1     0.00     0.00  __mod_maillage_MOD_extraire_nom_maillage
+  0.00    112.60     0.00        1     0.00     0.00  __mod_maillage_MOD_lecture_maillage
+  0.00    112.60     0.00        1     0.00     0.24  __mod_maillage_MOD_make_mesh
+  0.00    112.60     0.00        1     0.00     0.00  __mod_resolution_MOD_make_butcher_ssp_3_3
+  0.00    112.60     0.00        1     0.00     0.00  __mod_tri_maillage_MOD_fill_aretes_omega_i
+  0.00    112.60     0.00        1     0.00     0.00  __mod_tri_maillage_MOD_fill_flag
+  0.00    112.60     0.00        1     0.00     0.00  __mod_tri_maillage_MOD_fill_n_omega_r_faces_omega_r
+  0.00    112.60     0.00        1     0.00     0.00  __mod_tri_maillage_MOD_fill_n_omega_r_p_faces_omega_r_p
+  0.00    112.60     0.00        1     0.00     0.00  __mod_tri_maillage_MOD_fill_sommets_arete_a
+  0.00    112.60     0.00        1     0.00     0.00  __mod_tri_maillage_MOD_fill_trig_trig_f
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.01% of 112.60 seconds
+
+index % time    self  children    called     name
+                              708335             __mod_resolution_MOD_make_l_i_e [1]
+[1]     99.5    0.57  111.49       0+708335  __mod_resolution_MOD_make_l_i_e [1]
+                0.01   33.80  704915/704915      __mod_resolution_MOD_make_l_i_i [3]
+                6.65   14.47  733418/1465801     __mod_interpolation_MOD_make_m_i [2]
+                0.60   17.50  624512/624512      __mod_interpolation_MOD_make_i_i_vf [4]
+                0.88   12.94  656242/656242      __mod_interpolation_MOD_make_i_i_r_tilde [9]
+                3.39    9.12  703065/703065      __mod_interpolation_MOD_make_i_i_ef [12]
+                3.79    8.35 1453600/1453600     __mod_interpolation_MOD_cholesky [13]
+                              708335             __mod_resolution_MOD_make_l_i_e [1]
+-----------------------------------------------
+                6.64   14.45  732383/1465801     __mod_resolution_MOD_make_l_i_i [3]
+                6.65   14.47  733418/1465801     __mod_resolution_MOD_make_l_i_e [1]
+[2]     37.5   13.29   28.91 1465801         __mod_interpolation_MOD_make_m_i [2]
+                9.72    4.19 316858547/322222462     __mod_fonctions_MOD_m [8]
+                9.93    2.28 1392326/1625401     __mod_interpolation_MOD_make_beta_i [7]
+                2.81    0.00 35212883/91474255     __mod_base_MOD_make_base_phy [17]
+-----------------------------------------------
+                0.01   33.80  704915/704915      __mod_resolution_MOD_make_l_i_e [1]
+[3]     30.0    0.01   33.80  704915         __mod_resolution_MOD_make_l_i_i [3]
+                6.64   14.45  732383/1465801     __mod_interpolation_MOD_make_m_i [2]
+                1.59   11.12  711752/711752      __mod_interpolation_MOD_make_i_i_s [11]
+-----------------------------------------------
+                0.60   17.50  624512/624512      __mod_resolution_MOD_make_l_i_e [1]
+[4]     16.1    0.60   17.50  624512         __mod_interpolation_MOD_make_i_i_vf [4]
+                1.22   16.06 2774160/2774160     __mod_interpolation_MOD_flux_rusanov [5]
+                0.22    0.00 2764096/91474255     __mod_base_MOD_make_base_phy [17]
+-----------------------------------------------
+                1.22   16.06 2774160/2774160     __mod_interpolation_MOD_make_i_i_vf [4]
+[5]     15.3    1.22   16.06 2774160         __mod_interpolation_MOD_flux_rusanov [5]
+                1.99    3.30 29146187/47099365     __mod_fonctions_MOD_g [15]
+                4.08    0.61 28809195/91741936     __mod_qte_physiques_MOD_h [6]
+                1.05    1.65 30873653/35879960     __mod_fonctions_MOD_lambda_dv [24]
+                0.87    0.60 28539651/91161311     __mod_qte_physiques_MOD_u [20]
+                0.95    0.01 2961637/10528759     __mod_interpolation_MOD_reconstruction_locale [23]
+                0.39    0.55 14344095/19067803     __mod_base_MOD_hat_phi_f [28]
+-----------------------------------------------
+                0.66    0.10 4655689/91741936     __mod_interpolation_MOD_cholesky [13]
+                2.54    0.38 17912209/91741936     __mod_interpolation_MOD_make_i_i_s [11]
+                2.55    0.38 18022460/91741936     __mod_interpolation_MOD_make_i_i_ef [12]
+                3.17    0.47 22342383/91741936     __mod_fonctions_MOD_r_tilde [10]
+                4.08    0.61 28809195/91741936     __mod_interpolation_MOD_flux_rusanov [5]
+[6]     13.3   13.00    1.95 91741936         __mod_qte_physiques_MOD_h [6]
+                1.95    0.00 93209734/213691871     __mod_qte_physiques_MOD_b [21]
+-----------------------------------------------
+                1.66    0.38  233075/1625401     __mod_interpolation_MOD_cholesky [13]
+                9.93    2.28 1392326/1625401     __mod_interpolation_MOD_make_m_i [2]
+[7]     12.7   11.59    2.66 1625401         __mod_interpolation_MOD_make_beta_i [7]
+                2.11    0.03 6619362/10528759     __mod_interpolation_MOD_reconstruction_locale [23]
+                0.52    0.00 6559538/91474255     __mod_base_MOD_make_base_phy [17]
+-----------------------------------------------
+                0.16    0.07 5363915/322222462     __mod_interpolation_MOD_cholesky [13]
+                9.72    4.19 316858547/322222462     __mod_interpolation_MOD_make_m_i [2]
+[8]     12.6    9.88    4.26 322222462         __mod_fonctions_MOD_m [8]
+                4.26    0.00 312500920/414775087     __mod_qte_physiques_MOD_norme_2 [19]
+-----------------------------------------------
+                0.88   12.94  656242/656242      __mod_resolution_MOD_make_l_i_e [1]
+[9]     12.3    0.88   12.94  656242         __mod_interpolation_MOD_make_i_i_r_tilde [9]
+                1.84    9.36 18025221/21880787     __mod_fonctions_MOD_r_tilde [10]
+                1.14    0.00 14326146/91474255     __mod_base_MOD_make_base_phy [17]
+                0.60    0.00 18040799/53074061     __mod_base_MOD_hat_phi_i [25]
+-----------------------------------------------
+                0.39    2.00 3855566/21880787     __mod_interpolation_MOD_cholesky [13]
+                1.84    9.36 18025221/21880787     __mod_interpolation_MOD_make_i_i_r_tilde [9]
+[10]    12.1    2.23   11.36 21880787         __mod_fonctions_MOD_r_tilde [10]
+                1.89    2.16 20940285/42064249     __mod_fonctions_MOD_c_delta [16]
+                3.17    0.47 22342383/91741936     __mod_qte_physiques_MOD_h [6]
+                1.71    0.00 23290193/143373802     __mod_qte_physiques_MOD_theta_prime [14]
+                0.69    0.47 22501210/91161311     __mod_qte_physiques_MOD_u [20]
+                0.49    0.00 23584471/213691871     __mod_qte_physiques_MOD_b [21]
+                0.31    0.00 22620348/414775087     __mod_qte_physiques_MOD_norme_2 [19]
+-----------------------------------------------
+                1.59   11.12  711752/711752      __mod_resolution_MOD_make_l_i_i [3]
+[11]    11.3    1.59   11.12  711752         __mod_interpolation_MOD_make_i_i_s [11]
+                0.94    4.60 18222037/22876147     __mod_fonctions_MOD_s [18]
+                2.54    0.38 17912209/91741936     __mod_qte_physiques_MOD_h [6]
+                1.13    0.00 14209552/91474255     __mod_base_MOD_make_base_phy [17]
+                0.55    0.38 17892738/91161311     __mod_qte_physiques_MOD_u [20]
+                0.60    0.00 18040479/53074061     __mod_base_MOD_hat_phi_i [25]
+-----------------------------------------------
+                3.39    9.12  703065/703065      __mod_resolution_MOD_make_l_i_e [1]
+[12]    11.1    3.39    9.12  703065         __mod_interpolation_MOD_make_i_i_ef [12]
+                1.23    2.03 17953178/47099365     __mod_fonctions_MOD_g [15]
+                2.55    0.38 18022460/91741936     __mod_qte_physiques_MOD_h [6]
+                1.46    0.00 18308133/91474255     __mod_base_MOD_make_base_phy [17]
+                0.54    0.37 17729157/91161311     __mod_qte_physiques_MOD_u [20]
+                0.55    0.00 16465342/53074061     __mod_base_MOD_hat_phi_i [25]
+-----------------------------------------------
+                3.79    8.35 1453600/1453600     __mod_resolution_MOD_make_l_i_e [1]
+[13]    10.8    3.79    8.35 1453600         __mod_interpolation_MOD_cholesky [13]
+                0.39    2.00 3855566/21880787     __mod_fonctions_MOD_r_tilde [10]
+                1.66    0.38  233075/1625401     __mod_interpolation_MOD_make_beta_i [7]
+                0.24    1.18 4654110/22876147     __mod_fonctions_MOD_s [18]
+                0.66    0.10 4655689/91741936     __mod_qte_physiques_MOD_h [6]
+                0.17    0.27 5006307/35879960     __mod_fonctions_MOD_lambda_dv [24]
+                0.13    0.18 4723708/19067803     __mod_base_MOD_hat_phi_f [28]
+                0.30    0.00  947760/10528759     __mod_interpolation_MOD_reconstruction_locale [23]
+                0.16    0.07 5363915/322222462     __mod_fonctions_MOD_m [8]
+                0.14    0.09 4498555/91161311     __mod_qte_physiques_MOD_u [20]
+                0.12    0.00 8501548/414775087     __mod_qte_physiques_MOD_norme_2 [19]
+                0.10    0.00 4749282/213691871     __mod_qte_physiques_MOD_b [21]
+-----------------------------------------------
+                1.69    0.00 23081414/143373802     __mod_fonctions_MOD_s [18]
+                1.71    0.00 23290193/143373802     __mod_fonctions_MOD_r_tilde [10]
+                3.46    0.00 47157402/143373802     __mod_fonctions_MOD_g [15]
+                3.66    0.00 49844793/143373802     __mod_qte_physiques_MOD_t_s [22]
+[14]     9.3   10.52    0.00 143373802         __mod_qte_physiques_MOD_theta_prime [14]
+-----------------------------------------------
+                1.23    2.03 17953178/47099365     __mod_interpolation_MOD_make_i_i_ef [12]
+                1.99    3.30 29146187/47099365     __mod_interpolation_MOD_flux_rusanov [5]
+[15]     7.6    3.22    5.33 47099365         __mod_fonctions_MOD_g [15]
+                3.46    0.00 47157402/143373802     __mod_qte_physiques_MOD_theta_prime [14]
+                0.90    0.46 43388867/43388867     __mod_fonctions_MOD_q_d [27]
+                0.51    0.00 47445764/90638135     __mod_qte_physiques_MOD_grass [29]
+-----------------------------------------------
+                1.89    2.16 20940285/42064249     __mod_fonctions_MOD_r_tilde [10]
+                1.90    2.18 21123964/42064249     __mod_fonctions_MOD_s [18]
+[16]     7.2    3.79    4.35 42064249         __mod_fonctions_MOD_c_delta [16]
+                0.69    3.66 46324861/46324861     __mod_qte_physiques_MOD_t_s [22]
+-----------------------------------------------
+                0.00    0.00   30540/91474255     __mod_cl_MOD_neumann [36]
+                0.01    0.00   63367/91474255     __mod_resolution_MOD_point_fixe [33]
+                0.22    0.00 2764096/91474255     __mod_interpolation_MOD_make_i_i_vf [4]
+                0.52    0.00 6559538/91474255     __mod_interpolation_MOD_make_beta_i [7]
+                1.13    0.00 14209552/91474255     __mod_interpolation_MOD_make_i_i_s [11]
+                1.14    0.00 14326146/91474255     __mod_interpolation_MOD_make_i_i_r_tilde [9]
+                1.46    0.00 18308133/91474255     __mod_interpolation_MOD_make_i_i_ef [12]
+                2.81    0.00 35212883/91474255     __mod_interpolation_MOD_make_m_i [2]
+[17]     6.5    7.29    0.00 91474255         __mod_base_MOD_make_base_phy [17]
+-----------------------------------------------
+                0.24    1.18 4654110/22876147     __mod_interpolation_MOD_cholesky [13]
+                0.94    4.60 18222037/22876147     __mod_interpolation_MOD_make_i_i_s [11]
+[18]     6.2    1.18    5.78 22876147         __mod_fonctions_MOD_s [18]
+                1.90    2.18 21123964/42064249     __mod_fonctions_MOD_c_delta [16]
+                1.69    0.00 23081414/143373802     __mod_qte_physiques_MOD_theta_prime [14]
+-----------------------------------------------
+                0.12    0.00 8501548/414775087     __mod_interpolation_MOD_cholesky [13]
+                0.31    0.00 22620348/414775087     __mod_fonctions_MOD_r_tilde [10]
+                0.48    0.00 35200652/414775087     __mod_fonctions_MOD_partial_q_g [26]
+                0.49    0.00 35951619/414775087     __mod_fonctions_MOD_lambda_dv [24]
+                4.26    0.00 312500920/414775087     __mod_fonctions_MOD_m [8]
+[19]     5.0    5.65    0.00 414775087         __mod_qte_physiques_MOD_norme_2 [19]
+-----------------------------------------------
+                0.14    0.09 4498555/91161311     __mod_interpolation_MOD_cholesky [13]
+                0.54    0.37 17729157/91161311     __mod_interpolation_MOD_make_i_i_ef [12]
+                0.55    0.38 17892738/91161311     __mod_interpolation_MOD_make_i_i_s [11]
+                0.69    0.47 22501210/91161311     __mod_fonctions_MOD_r_tilde [10]
+                0.87    0.60 28539651/91161311     __mod_interpolation_MOD_flux_rusanov [5]
+[20]     4.2    2.79    1.92 91161311         __mod_qte_physiques_MOD_u [20]
+                1.92    0.00 92080654/213691871     __mod_qte_physiques_MOD_b [21]
+-----------------------------------------------
+                0.00    0.00    7898/213691871     __mod_cl_MOD_neumann [36]
+                0.00    0.00   59832/213691871     __mod_resolution_MOD_point_fixe [33]
+                0.10    0.00 4749282/213691871     __mod_interpolation_MOD_cholesky [13]
+                0.49    0.00 23584471/213691871     __mod_fonctions_MOD_r_tilde [10]
+                1.92    0.00 92080654/213691871     __mod_qte_physiques_MOD_u [20]
+                1.95    0.00 93209734/213691871     __mod_qte_physiques_MOD_h [6]
+[21]     4.0    4.46    0.00 213691871         __mod_qte_physiques_MOD_b [21]
+-----------------------------------------------
+                0.69    3.66 46324861/46324861     __mod_fonctions_MOD_c_delta [16]
+[22]     3.9    0.69    3.66 46324861         __mod_qte_physiques_MOD_t_s [22]
+                3.66    0.00 49844793/143373802     __mod_qte_physiques_MOD_theta_prime [14]
+-----------------------------------------------
+                0.30    0.00  947760/10528759     __mod_interpolation_MOD_cholesky [13]
+                0.95    0.01 2961637/10528759     __mod_interpolation_MOD_flux_rusanov [5]
+                2.11    0.03 6619362/10528759     __mod_interpolation_MOD_make_beta_i [7]
+[23]     3.0    3.36    0.04 10528759         __mod_interpolation_MOD_reconstruction_locale [23]
+                0.04    0.00  393357/393357      __mod_cl_MOD_periodique [32]
+-----------------------------------------------
+                0.17    0.27 5006307/35879960     __mod_interpolation_MOD_cholesky [13]
+                1.05    1.65 30873653/35879960     __mod_interpolation_MOD_flux_rusanov [5]
+[24]     2.8    1.22    1.92 35879960         __mod_fonctions_MOD_lambda_dv [24]
+                0.95    0.48 39155993/39155993     __mod_fonctions_MOD_partial_q_g [26]
+                0.49    0.00 35951619/414775087     __mod_qte_physiques_MOD_norme_2 [19]
+-----------------------------------------------
+                0.00    0.00   27106/53074061     __mod_cl_MOD_neumann [36]
+                0.00    0.00   60335/53074061     __mod_resolution_MOD_point_fixe [33]
+                0.01    0.00  440000/53074061     MAIN__ [34]
+                0.55    0.00 16465342/53074061     __mod_interpolation_MOD_make_i_i_ef [12]
+                0.60    0.00 18040479/53074061     __mod_interpolation_MOD_make_i_i_s [11]
+                0.60    0.00 18040799/53074061     __mod_interpolation_MOD_make_i_i_r_tilde [9]
+[25]     1.6    1.77    0.00 53074061         __mod_base_MOD_hat_phi_i [25]
+-----------------------------------------------
+                0.95    0.48 39155993/39155993     __mod_fonctions_MOD_lambda_dv [24]
+[26]     1.3    0.95    0.48 39155993         __mod_fonctions_MOD_partial_q_g [26]
+                0.48    0.00 35200652/414775087     __mod_qte_physiques_MOD_norme_2 [19]
+-----------------------------------------------
+                0.90    0.46 43388867/43388867     __mod_fonctions_MOD_g [15]
+[27]     1.2    0.90    0.46 43388867         __mod_fonctions_MOD_q_d [27]
+                0.46    0.00 43192371/90638135     __mod_qte_physiques_MOD_grass [29]
+-----------------------------------------------
+                0.13    0.18 4723708/19067803     __mod_interpolation_MOD_cholesky [13]
+                0.39    0.55 14344095/19067803     __mod_interpolation_MOD_flux_rusanov [5]
+[28]     1.1    0.52    0.73 19067803         __mod_base_MOD_hat_phi_f [28]
+                0.73    0.00 19627071/19633471     __mod_tri_maillage_MOD_get_s_i_1_back [30]
+-----------------------------------------------
+                0.46    0.00 43192371/90638135     __mod_fonctions_MOD_q_d [27]
+                0.51    0.00 47445764/90638135     __mod_fonctions_MOD_g [15]
+[29]     0.9    0.97    0.00 90638135         __mod_qte_physiques_MOD_grass [29]
+-----------------------------------------------
+                0.00    0.00    6400/19633471     __mod_maillage_MOD_aire [37]
+                0.73    0.00 19627071/19633471     __mod_base_MOD_hat_phi_f [28]
+[30]     0.6    0.73    0.00 19633471         __mod_tri_maillage_MOD_get_s_i_1_back [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[31]     0.4    0.50    0.00                 _init [31]
+-----------------------------------------------
+                0.04    0.00  393357/393357      __mod_interpolation_MOD_reconstruction_locale [23]
+[32]     0.0    0.04    0.00  393357         __mod_cl_MOD_periodique [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.0    0.01    0.01                 __mod_resolution_MOD_point_fixe [33]
+                0.01    0.00   63367/91474255     __mod_base_MOD_make_base_phy [17]
+                0.00    0.00   60335/53074061     __mod_base_MOD_hat_phi_i [25]
+                0.00    0.00   59832/213691871     __mod_qte_physiques_MOD_b [21]
+-----------------------------------------------
+                0.00    0.01       1/1           main [35]
+[34]     0.0    0.00    0.01       1         MAIN__ [34]
+                0.01    0.00  440000/53074061     __mod_base_MOD_hat_phi_i [25]
+                0.00    0.00       1/1           __mod_maillage_MOD_make_mesh [38]
+                0.00    0.00     902/902         __mod_resolution_MOD_ssp [46]
+                0.00    0.00     902/902         __mod_resolution_MOD_find_dt [45]
+                0.00    0.00       1/1           __mod_resolution_MOD_make_butcher_ssp_3_3 [66]
+                0.00    0.00       1/1           __mod_legendre_MOD_poids_legendre_1d [59]
+                0.00    0.00       1/1           __mod_legendre_MOD_racines_legendre_1d [61]
+                0.00    0.00       1/1           __mod_base_MOD_make_quad_ref [55]
+                0.00    0.00       1/1           __mod_base_MOD_make_base_ref [54]
+                0.00    0.00       1/1           __mod_interpolation_MOD_make_m_i_std [58]
+                0.00    0.00       1/1           __mod_interpolation_MOD_make_k_i_std [57]
+                0.00    0.00       1/1           __mod_interpolation_MOD_make_b_i [56]
+-----------------------------------------------
+                                                 <spontaneous>
+[35]     0.0    0.00    0.01                 main [35]
+                0.00    0.01       1/1           MAIN__ [34]
+-----------------------------------------------
+                                                 <spontaneous>
+[36]     0.0    0.00    0.00                 __mod_cl_MOD_neumann [36]
+                0.00    0.00   30540/91474255     __mod_base_MOD_make_base_phy [17]
+                0.00    0.00   27106/53074061     __mod_base_MOD_hat_phi_i [25]
+                0.00    0.00    7898/213691871     __mod_qte_physiques_MOD_b [21]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_make_mesh [38]
+[37]     0.0    0.00    0.00       1         __mod_maillage_MOD_aire [37]
+                0.00    0.00    6400/19633471     __mod_tri_maillage_MOD_get_s_i_1_back [30]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[38]     0.0    0.00    0.00       1         __mod_maillage_MOD_make_mesh [38]
+                0.00    0.00       1/1           __mod_maillage_MOD_aire [37]
+                0.00    0.00       1/1           __mod_maillage_MOD_lecture_maillage [65]
+                0.00    0.00       1/1           __mod_maillage_MOD_connectivite [63]
+                0.00    0.00       1/1           __mod_maillage_MOD_cl_arete [62]
+                0.00    0.00       1/1           __mod_tri_maillage_MOD_fill_n_omega_r_p_faces_omega_r_p [70]
+-----------------------------------------------
+                0.00    0.00     902/902         MAIN__ [34]
+[45]     0.0    0.00    0.00     902         __mod_resolution_MOD_find_dt [45]
+-----------------------------------------------
+                0.00    0.00     902/902         MAIN__ [34]
+[46]     0.0    0.00    0.00     902         __mod_resolution_MOD_ssp [46]
+-----------------------------------------------
+                0.00    0.00     114/564         __mod_legendre_MOD_dubiner_xi_2d [53]
+                0.00    0.00     450/564         __mod_base_MOD_make_base_ref [54]
+[47]     0.0    0.00    0.00     564         __mod_legendre_MOD_legendre_xi_1d [47]
+-----------------------------------------------
+                0.00    0.00     114/489         __mod_legendre_MOD_dubiner_eta_2d [52]
+                0.00    0.00     171/489         __mod_legendre_MOD_dubiner_xi_2d [53]
+                0.00    0.00     204/489         __mod_legendre_MOD_dubiner_2d [51]
+[48]     0.0    0.00    0.00     489         __mod_legendre_MOD_jacobi_1d [48]
+-----------------------------------------------
+                0.00    0.00     450/450         __mod_base_MOD_make_base_ref [54]
+[49]     0.0    0.00    0.00     450         __mod_legendre_MOD_legendre_1d [49]
+-----------------------------------------------
+                0.00    0.00     405/405         __mod_base_MOD_make_base_ref [54]
+[50]     0.0    0.00    0.00     405         __mod_legendre_MOD_legendre_2d [50]
+-----------------------------------------------
+                0.00    0.00     204/204         __mod_base_MOD_make_base_ref [54]
+[51]     0.0    0.00    0.00     204         __mod_legendre_MOD_dubiner_2d [51]
+                0.00    0.00     204/489         __mod_legendre_MOD_jacobi_1d [48]
+-----------------------------------------------
+                0.00    0.00     114/114         __mod_base_MOD_make_base_ref [54]
+[52]     0.0    0.00    0.00     114         __mod_legendre_MOD_dubiner_eta_2d [52]
+                0.00    0.00     114/489         __mod_legendre_MOD_jacobi_1d [48]
+-----------------------------------------------
+                0.00    0.00     114/114         __mod_base_MOD_make_base_ref [54]
+[53]     0.0    0.00    0.00     114         __mod_legendre_MOD_dubiner_xi_2d [53]
+                0.00    0.00     171/489         __mod_legendre_MOD_jacobi_1d [48]
+                0.00    0.00     114/564         __mod_legendre_MOD_legendre_xi_1d [47]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[54]     0.0    0.00    0.00       1         __mod_base_MOD_make_base_ref [54]
+                0.00    0.00     450/564         __mod_legendre_MOD_legendre_xi_1d [47]
+                0.00    0.00     450/450         __mod_legendre_MOD_legendre_1d [49]
+                0.00    0.00     405/405         __mod_legendre_MOD_legendre_2d [50]
+                0.00    0.00     204/204         __mod_legendre_MOD_dubiner_2d [51]
+                0.00    0.00     114/114         __mod_legendre_MOD_dubiner_xi_2d [53]
+                0.00    0.00     114/114         __mod_legendre_MOD_dubiner_eta_2d [52]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[55]     0.0    0.00    0.00       1         __mod_base_MOD_make_quad_ref [55]
+                0.00    0.00       1/1           __mod_legendre_MOD_quadrature_dunavant [60]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[56]     0.0    0.00    0.00       1         __mod_interpolation_MOD_make_b_i [56]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[57]     0.0    0.00    0.00       1         __mod_interpolation_MOD_make_k_i_std [57]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[58]     0.0    0.00    0.00       1         __mod_interpolation_MOD_make_m_i_std [58]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[59]     0.0    0.00    0.00       1         __mod_legendre_MOD_poids_legendre_1d [59]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_base_MOD_make_quad_ref [55]
+[60]     0.0    0.00    0.00       1         __mod_legendre_MOD_quadrature_dunavant [60]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[61]     0.0    0.00    0.00       1         __mod_legendre_MOD_racines_legendre_1d [61]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_make_mesh [38]
+[62]     0.0    0.00    0.00       1         __mod_maillage_MOD_cl_arete [62]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_make_mesh [38]
+[63]     0.0    0.00    0.00       1         __mod_maillage_MOD_connectivite [63]
+                0.00    0.00       1/1           __mod_tri_maillage_MOD_fill_flag [68]
+                0.00    0.00       1/1           __mod_tri_maillage_MOD_fill_sommets_arete_a [71]
+                0.00    0.00       1/1           __mod_tri_maillage_MOD_fill_aretes_omega_i [67]
+                0.00    0.00       1/1           __mod_tri_maillage_MOD_fill_trig_trig_f [72]
+                0.00    0.00       1/1           __mod_tri_maillage_MOD_fill_n_omega_r_faces_omega_r [69]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_lecture_maillage [65]
+[64]     0.0    0.00    0.00       1         __mod_maillage_MOD_extraire_nom_maillage [64]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_make_mesh [38]
+[65]     0.0    0.00    0.00       1         __mod_maillage_MOD_lecture_maillage [65]
+                0.00    0.00       1/1           __mod_maillage_MOD_extraire_nom_maillage [64]
+-----------------------------------------------
+                0.00    0.00       1/1           MAIN__ [34]
+[66]     0.0    0.00    0.00       1         __mod_resolution_MOD_make_butcher_ssp_3_3 [66]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_connectivite [63]
+[67]     0.0    0.00    0.00       1         __mod_tri_maillage_MOD_fill_aretes_omega_i [67]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_connectivite [63]
+[68]     0.0    0.00    0.00       1         __mod_tri_maillage_MOD_fill_flag [68]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_connectivite [63]
+[69]     0.0    0.00    0.00       1         __mod_tri_maillage_MOD_fill_n_omega_r_faces_omega_r [69]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_make_mesh [38]
+[70]     0.0    0.00    0.00       1         __mod_tri_maillage_MOD_fill_n_omega_r_p_faces_omega_r_p [70]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_connectivite [63]
+[71]     0.0    0.00    0.00       1         __mod_tri_maillage_MOD_fill_sommets_arete_a [71]
+-----------------------------------------------
+                0.00    0.00       1/1           __mod_maillage_MOD_connectivite [63]
+[72]     0.0    0.00    0.00       1         __mod_tri_maillage_MOD_fill_trig_trig_f [72]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [34] MAIN__                  [4] __mod_interpolation_MOD_make_i_i_vf [29] __mod_qte_physiques_MOD_grass
+  [28] __mod_base_MOD_hat_phi_f [57] __mod_interpolation_MOD_make_k_i_std [6] __mod_qte_physiques_MOD_h
+  [25] __mod_base_MOD_hat_phi_i [2] __mod_interpolation_MOD_make_m_i [19] __mod_qte_physiques_MOD_norme_2
+  [17] __mod_base_MOD_make_base_phy [58] __mod_interpolation_MOD_make_m_i_std [22] __mod_qte_physiques_MOD_t_s
+  [54] __mod_base_MOD_make_base_ref [23] __mod_interpolation_MOD_reconstruction_locale [14] __mod_qte_physiques_MOD_theta_prime
+  [55] __mod_base_MOD_make_quad_ref [51] __mod_legendre_MOD_dubiner_2d [20] __mod_qte_physiques_MOD_u
+  [32] __mod_cl_MOD_periodique [52] __mod_legendre_MOD_dubiner_eta_2d [45] __mod_resolution_MOD_find_dt
+  [16] __mod_fonctions_MOD_c_delta [53] __mod_legendre_MOD_dubiner_xi_2d [66] __mod_resolution_MOD_make_butcher_ssp_3_3
+  [15] __mod_fonctions_MOD_g  [48] __mod_legendre_MOD_jacobi_1d [1] __mod_resolution_MOD_make_l_i_e
+  [24] __mod_fonctions_MOD_lambda_dv [49] __mod_legendre_MOD_legendre_1d [3] __mod_resolution_MOD_make_l_i_i
+   [8] __mod_fonctions_MOD_m  [50] __mod_legendre_MOD_legendre_2d [33] __mod_resolution_MOD_point_fixe
+  [26] __mod_fonctions_MOD_partial_q_g [47] __mod_legendre_MOD_legendre_xi_1d [46] __mod_resolution_MOD_ssp
+  [27] __mod_fonctions_MOD_q_d [59] __mod_legendre_MOD_poids_legendre_1d [67] __mod_tri_maillage_MOD_fill_aretes_omega_i
+  [10] __mod_fonctions_MOD_r_tilde [60] __mod_legendre_MOD_quadrature_dunavant [68] __mod_tri_maillage_MOD_fill_flag
+  [18] __mod_fonctions_MOD_s  [61] __mod_legendre_MOD_racines_legendre_1d [69] __mod_tri_maillage_MOD_fill_n_omega_r_faces_omega_r
+  [13] __mod_interpolation_MOD_cholesky [37] __mod_maillage_MOD_aire [70] __mod_tri_maillage_MOD_fill_n_omega_r_p_faces_omega_r_p
+   [5] __mod_interpolation_MOD_flux_rusanov [62] __mod_maillage_MOD_cl_arete [71] __mod_tri_maillage_MOD_fill_sommets_arete_a
+  [56] __mod_interpolation_MOD_make_b_i [63] __mod_maillage_MOD_connectivite [72] __mod_tri_maillage_MOD_fill_trig_trig_f
+   [7] __mod_interpolation_MOD_make_beta_i [64] __mod_maillage_MOD_extraire_nom_maillage [30] __mod_tri_maillage_MOD_get_s_i_1_back
+  [12] __mod_interpolation_MOD_make_i_i_ef [65] __mod_maillage_MOD_lecture_maillage [31] _init
+   [9] __mod_interpolation_MOD_make_i_i_r_tilde [38] __mod_maillage_MOD_make_mesh
+  [11] __mod_interpolation_MOD_make_i_i_s [21] __mod_qte_physiques_MOD_b

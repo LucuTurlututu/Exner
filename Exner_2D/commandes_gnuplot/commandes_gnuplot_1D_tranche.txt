@@ -1,0 +1,41 @@
+reset
+
+# ==============================================================================
+# CONFIGURATION EXPORT PROFESSIONNEL (COUPE 2D SANS LÉGENDE)
+# ==============================================================================
+set terminal pdfcairo size 22.0cm,12.0cm font "Arial,14"
+set output "/mnt/c/Users/FlowUp/Documents/3A/Toulon/Rapport/PNG/Manufacturee/mpm_n_x_40_1D_tranche.pdf"
+
+set grid
+set encoding utf8
+
+# ==============================================================================
+# MARGES (Rigoureusement alignées sur la vue globale)
+# ==============================================================================
+set bmargin 4.0
+set lmargin 8.0
+set tmargin 2.0
+set rmargin 4.0
+
+set xrange [0:1]
+set yrange [-1:1]
+
+set xlabel "x" offset 0, -0.2
+set ylabel "b(x)" offset -0.2, 0
+
+# ==============================================================================
+# PAS DE LÉGENDE (Gérée globalement dans le texte LaTeX)
+# ==============================================================================
+unset key
+
+# Palette de couleurs (bleu et rouge pour t=0.25s et t=0.50s)
+color_t025 = "blue"
+color_t050 = "red"
+
+# ==============================================================================
+# TRACÉ DU PROFIL 2D (Style dots allégé pour la fluidité du PDF)
+# ==============================================================================
+plot "./SORTIE/b_0.500.dat" u 1:3 with dots lc rgb color_t025 notitle, \
+     "./SORTIE/b_1.000.dat" u 1:3 with dots lc rgb color_t050 notitle
+
+unset output

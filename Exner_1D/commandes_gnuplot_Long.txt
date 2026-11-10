@@ -1,0 +1,58 @@
+reset
+
+# ==============================================================================
+# CONFIGURATION EXPORT PROFESSIONNEL (GRAND FORMAT SINGLE GRAPH)
+# ==============================================================================
+# Largeur augmentée à 22cm comme demandé, hauteur proportionnelle pour un beau ratio
+set terminal pdfcairo size 22.0cm,12.0cm font "Arial,14"
+set output "/mnt/c/Users/FlowUp/Documents/3A/Toulon/Exner/Rapport/PNG/long_n_x_300.pdf"
+
+set grid
+set encoding utf8
+
+# ==============================================================================
+# CONFIGURATION DE LA FENÊTRE GRAPHIQUE (Marges aérées pour grand format)
+# ==============================================================================
+set bmargin 4.0
+set lmargin 10.0
+set tmargin 2.0
+set rmargin 3.0
+
+set xlabel "x" offset 0, -0.2
+set ylabel "b(x)" offset -0.2, 0
+
+# Fenêtre d'affichage adaptée à tes données de Long
+set xrange [120:210]
+set yrange [-6.5:-3.8]
+
+# ==============================================================================
+# LÉGENDE ET COULEURS
+# ==============================================================================
+set key top left box             # Positionnée en bas à gauche pour ne pas gêner les chocs à droite
+set key font "Arial, 12"
+set key spacing 1.2
+
+# Code couleur harmonieux (Noir pour initial, puis dégradé ou couleurs distinctes pour le temps)
+color_init = "black"
+color_t600 = "blue"
+color_t2000 = "red"
+color_t6000 = "orange"
+
+# ==============================================================================
+# TRACÉ (Styles calqués sur tes descriptions de texte)
+# ==============================================================================
+# - Solutions numériques (DG) : lignes continues épaisses (lw 3)
+# - Solutions analytiques faibles : lignes pointillées (dt 2)
+
+plot "./SORTIE/b_0.000.dat" u 1:2 with lines lw 3 lc rgb color_init title "Initial", \
+     \
+     "./SORTIE/LONG/ana_faible_600.dat" u 1:2 with lines dt 2 lw 3 lc rgb color_t600 title "Analytique t=600", \
+     "./SORTIE/b_600.000.dat" u 1:2 with points lw 3 pt 1 lc rgb color_t600 title "DG t=600", \
+     \
+     "./SORTIE/LONG/ana_faible_2000.dat" u 1:2 with lines dt 2 lw 3 lc rgb color_t2000 title "Analytique t=2000", \
+     "./SORTIE/b_2000.000.dat" u 1:2 with points lw 3 pt 1 lc rgb color_t2000 title "DG t=2000", \
+     \
+     "./SORTIE/LONG/ana_faible_6000.dat" u 1:2 with lines dt 2 lw 3 lc rgb color_t6000 title "Analytique t=6000", \
+     "./SORTIE/b_6000.000.dat" u 1:2 with points lw 3 pt 1 lc rgb color_t6000 title "DG t=6000"
+
+unset output
