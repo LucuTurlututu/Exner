@@ -1,0 +1,27 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction et présentation de la méthode de Galerkin discontinue}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction au sujet de stage}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Présentation de la méthode DG}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Équation d'Exner généralisée et formulation de Galerkin discontinue}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Équation d'Exner généralisée}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Formulation semi-discrète 1D}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Formulation discrète 1D}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Applications et validation numérique 1D}{22}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Présentation des lois empiriques}{23}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Cas test 1 : Solution manufacturée}{28}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Cas test 2 : Solution analytique de Berthon \textit {et al.}}{30}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Cas test 3 : Solution semi-analytique de Long \textit {et al.}}{32}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Cas test 4 : Solution semi-analytique de Fernandez-Nieto \textit {et al.}}{34}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Formulation semi-discrète 2D}{38}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Formulation discrète 2D}{44}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Applications et validation numérique 2D}{46}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Cas test 1 : Solution manufacturée 2D}{46}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Cas test 2 : Solution manufacturée 1D}{48}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Cas test 3 : Solution analytique de Berthon \textit {et al.}}{49}{subsection.2.7.3}%
+\contentsline {chapter}{\numberline {3}Système d'équations de Saint-Venant-Exner et formulation de Galerkin discontinue}{50}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Système de Saint-Venant-Exner}{50}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Formulation semi-discrète}{53}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Formulation discrète}{55}{section.3.3}%
+\contentsline {chapter}{Conclusion et perspectives}{57}{equation.3.35}%
+\contentsline {chapter}{Bibliographie}{58}{section*.33}%
+\contentsline {chapter}{Annexe \numberline {A}Calcul du polynôme caractéristique $\chi _H$}{62}{appendix.1.A}%

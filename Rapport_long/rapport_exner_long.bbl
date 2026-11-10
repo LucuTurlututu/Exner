@@ -1,0 +1,183 @@
+\begin{thebibliography}{10}
+
+\bibitem{ba2026coupled}
+Alioune Ba, Mehmet Ersoy, and Timack Ngom.
+\newblock A coupled saint-venant-exner model with threshold erosion law: Mathematical formulation and numerical approximation.
+\newblock 2026.
+
+\bibitem{berthon2012analytical}
+Christophe Berthon, St{\'e}phane Cordier, Olivier Delestre, and Minh~Hoang Le.
+\newblock An analytical solution of the shallow water system coupled to the exner equation.
+\newblock {\em Comptes Rendus Mathematique}, 350(3-4):183--186, 2012.
+
+\bibitem{bonaventura2018multilayer}
+Luca Bonaventura, Enrique~D Fern{\'a}ndez-Nieto, Jos{\'e} Garres-D{\'\i}az, and Gladys Narbona-Reina.
+\newblock Multilayer shallow water models with locally variable number of layers and semi-implicit time discretization.
+\newblock {\em Journal of Computational Physics}, 364:209--234, 2018.
+
+\bibitem{butcher1996runge}
+John~Charles Butcher and Gerhard Wanner.
+\newblock Runge-kutta methods: some historical notes.
+\newblock {\em Applied Numerical Mathematics}, 22(1-3):113--151, 1996.
+
+\bibitem{cockburn2001runge}
+Bernardo Cockburn and Chi-Wang Shu.
+\newblock Runge--kutta discontinuous galerkin methods for convection-dominated problems.
+\newblock {\em Journal of scientific computing}, 16(3):173--261, 2001.
+
+\bibitem{conde2017implicit}
+Sidafa Conde, Sigal Gottlieb, Zachary~J Grant, and John~N Shadid.
+\newblock Implicit and implicit--explicit strong stability preserving runge--kutta methods with high linear order.
+\newblock {\em Journal of Scientific Computing}, 73(2):667--690, 2017.
+
+\bibitem{cordier2011bedload}
+St{\'e}phane Cordier, Minh~H Le, and T~Morales De~Luna.
+\newblock Bedload transport in shallow water models: Why splitting (may) fail, how hyperbolicity (can) help.
+\newblock {\em Advances in Water Resources}, 34(8):980--989, 2011.
+
+\bibitem{dubiner1991spectral}
+Moshe Dubiner.
+\newblock Spectral methods on triangles and other domains.
+\newblock {\em Journal of Scientific Computing}, 6(4):345--390, 1991.
+
+\bibitem{fernandez2025third}
+Enrique~D Fernandez-Nieto, Jose Garres-Diaz, Emanuele Macca, and Giovanni Russo.
+\newblock A third-order finite volume semi-implicit method for the shallow water-exner model.
+\newblock {\em Journal of Scientific Computing}, 105(3):1--39, 2025.
+
+\bibitem{garres2020shallow}
+Jose Garres-Diaz, Manuel J~Castro D{\'\i}az, Julian Koellermeier, and Tom{\'a}s~Morales de~Luna.
+\newblock Shallow water moment models for bedload transport problems.
+\newblock {\em arXiv preprint arXiv:2008.08449}, 2020.
+
+\bibitem{gottlieb2005high}
+Sigal Gottlieb.
+\newblock On high order strong stability preserving runge-kutta and multi step time discretizations.
+\newblock {\em Journal of scientific computing}, 25(1):105--128, 2005.
+
+\bibitem{grass1981sediment}
+Arnold~Jules Grass.
+\newblock {\em Sediment transport by waves and currents}.
+\newblock University College, London, Department of Civil Engineering, 1981.
+
+\bibitem{hanson1991development}
+GJ~Hanson.
+\newblock Development of a jet index to characterize erosion resistance of soils in earthen spillways.
+\newblock {\em Transactions of the ASAE}, 34(5):2015--2020, 1991.
+
+\bibitem{johnson2002controlling}
+Hakeem~K Johnson and Julio~A Zyserman.
+\newblock Controlling spatial oscillations in bed level update schemes.
+\newblock {\em Coastal Engineering}, 46(2):109--126, 2002.
+
+\bibitem{keulegan1938laws}
+Garbis~Hovannes Keulegan.
+\newblock {\em Laws of turbulent flow in open channels}.
+\newblock National Bureau of Standards, 1938.
+
+\bibitem{kowalski2017moment}
+Julia Kowalski and Manuel Torrilhon.
+\newblock Moment approximations and model cascades for shallow flow.
+\newblock {\em arXiv preprint arXiv:1801.00046}, 2017.
+
+\bibitem{krivodonova2007limiters}
+Lilia Krivodonova.
+\newblock Limiters for high-order discontinuous galerkin methods.
+\newblock {\em Journal of Computational Physics}, 226(1):879--896, 2007.
+
+\bibitem{long2008numerical}
+Wen Long, James~T Kirby, and Zhiyu Shao.
+\newblock A numerical scheme for morphological bed level calculations.
+\newblock {\em Coastal Engineering}, 55(2):167--180, 2008.
+
+\bibitem{martins2003complex}
+Joaquim~RRA Martins, Peter Sturdza, and Juan~J Alonso.
+\newblock The complex-step derivative approximation.
+\newblock {\em ACM Transactions on Mathematical Software (TOMS)}, 29(3):245--262, 2003.
+
+\bibitem{meyer1948formulas}
+E~MEYER-PETER.
+\newblock Formulas for bed-load transport.
+\newblock In {\em Proc. 2nd IAHR Meeting, 1948}, pages 39--64, 1948.
+
+\bibitem{norsett1984embedded}
+Syvert~P N{\o}rsett and Per~G Thomsen.
+\newblock Embedded sdirk-methods of basic order three.
+\newblock {\em BIT Numerical Mathematics}, 24(4):634--646, 1984.
+
+\bibitem{pareschi2005implicit}
+Lorenzo Pareschi and Giovanni Russo.
+\newblock Implicit--explicit runge--kutta schemes and applications to hyperbolic systems with relaxation.
+\newblock {\em Journal of Scientific computing}, 25(1):129--155, 2005.
+
+\bibitem{parvin2025coupled}
+Afroja Parvin, Giovanni Samaey, and Julian Koellermeier.
+\newblock A coupled hydro-morphodynamic model for sediment transport using the moment approach.
+\newblock {\em arXiv preprint arXiv:2505.22278}, 2025.
+
+\bibitem{poussel2024dynamique}
+Camille Poussel.
+\newblock {\em Dynamique des {\'e}coulements {\`a} surface libre dans les plages sableuses}.
+\newblock PhD thesis, Toulon, 2024.
+
+\bibitem{poussel2025wetting}
+Camille Poussel, Mehmet Ersoy, and Fr{\'e}d{\'e}ric Golay.
+\newblock Wetting and drying treatments with mesh adaptation for shallow water equations using a runge--kutta discontinuous galerkin method.
+\newblock {\em International Journal for Numerical Methods in Fluids}, 97(5):692--712, 2025.
+
+\bibitem{shields1936application}
+Albert Shields.
+\newblock Application of similarity principles and turbulence research to bed-load movement.
+\newblock 1936.
+
+\bibitem{soulsby1997dynamics}
+Richard Soulsby.
+\newblock Dynamics of marine sands.
+\newblock 1997.
+
+\bibitem{spiteri2002new}
+Raymond~J Spiteri and Steven~J Ruuth.
+\newblock A new class of optimal high-order strong-stability-preserving time discretization methods.
+\newblock {\em SIAM Journal on Numerical Analysis}, 40(2):469--491, 2002.
+
+\bibitem{stecca2012numerical}
+Guglielmo Stecca et~al.
+\newblock Numerical modelling of gravel-bed river morphodynamics.
+\newblock 2012.
+
+\bibitem{van1984sediment1}
+Leo~C Van~Rijn.
+\newblock Sediment transport, part i: bed load transport.
+\newblock {\em Journal of hydraulic engineering}, 110(10):1431--1456, 1984.
+
+\bibitem{van1984sediment2}
+Leo~C Van~Rijn.
+\newblock Sediment transport, part ii: suspended load transport.
+\newblock {\em Journal of hydraulic engineering}, 110(11):1613--1641, 1984.
+
+\bibitem{van1984sediment3}
+Leo~C Van~Rijn.
+\newblock Sediment transport, part iii: bed forms and alluvial roughness.
+\newblock {\em Journal of hydraulic engineering}, 110(12):1733--1754, 1984.
+
+\bibitem{villaret2003modelisation}
+C~VILLARET.
+\newblock Mod{\'e}lisation du transport s{\'e}dimentaire en granulom{\'e}trie {\'e}tendue: {\'e}tude bibliographique programme biparti 2001.
+\newblock 2003.
+
+\bibitem{vries1965considerations}
+DE~VRIES.
+\newblock Considerations about non-steady bed-load transport in open channels.
+\newblock {\em Proc. 11th Int. Congr. IAHR, Delft, the Netherlands}, pages 3--8, 1965.
+
+\bibitem{whitham2011linear}
+Gerald~Beresford Whitham.
+\newblock {\em Linear and nonlinear waves}.
+\newblock John Wiley \& Sons, 2011.
+
+\bibitem{zhang1993sedimentation}
+Ruijin Zhang and Jianheng Xie.
+\newblock {\em Sedimentation research in China: Systematic selections}.
+\newblock China and Power Press, 1993.
+
+\end{thebibliography}

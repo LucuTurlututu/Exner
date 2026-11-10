@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: rapport_exner_long.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--empty journal in ba2026coupled
+Warning--empty journal in shields1936application
+Warning--empty journal in soulsby1997dynamics
+Warning--empty journal in stecca2012numerical
+Warning--empty journal in villaret2003modelisation
+You've used 36 entries,
+            2118 wiz_defined-function locations,
+            707 strings with 9792 characters,
+and the built_in function-call counts, 10899 in all, are:
+= -- 1094
+> -- 452
+< -- 2
++ -- 187
+- -- 144
+* -- 758
+:= -- 1861
+add.period$ -- 108
+call.type$ -- 36
+change.case$ -- 174
+chr.to.int$ -- 0
+cite$ -- 41
+duplicate$ -- 405
+empty$ -- 874
+format.name$ -- 144
+if$ -- 2215
+int.to.chr$ -- 0
+int.to.str$ -- 36
+missing$ -- 39
+newline$ -- 183
+num.names$ -- 72
+pop$ -- 165
+preamble$ -- 1
+purify$ -- 143
+quote$ -- 0
+skip$ -- 272
+stack$ -- 0
+substring$ -- 767
+swap$ -- 44
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 136
+warning$ -- 5
+while$ -- 120
+width$ -- 38
+write$ -- 381
+(There were 5 warnings)

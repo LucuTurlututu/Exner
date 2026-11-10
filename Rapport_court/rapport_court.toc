@@ -1,0 +1,17 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Introduction}{1}{section*.2}%
+\contentsline {chapter}{\numberline {1}Équation d'Exner généralisée et formulation de Galerkin discontinue}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Formulation semi-discrète}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Formulation discrète}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Applications et validation numérique}{8}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Présentation des lois empiriques}{8}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Cas test 1 : Solution manufacturée 2D}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Cas test 2 : Solution semi-analytique de Long \textit {et al.}}{9}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Cas test 3 : Solution semi-analytique de Fernandez-Nieto \textit {et al.}}{11}{subsection.1.3.4}%
+\contentsline {chapter}{\numberline {2}Système d'équations de Saint-Venant-Exner et formulation de Galerkin discontinue}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Formulation semi-discrète et discrète}{15}{section.2.1}%
+\contentsline {chapter}{Conclusion et perspectives}{17}{equation.2.18}%
+\contentsline {chapter}{Annexe \numberline {A}Présentation de la méthode de Galerkin discontinue sur l'équation de transport en 1D}{18}{appendix.1.A}%
+\contentsline {chapter}{Annexe \numberline {B}Figures du cas test 1}{23}{appendix.1.B}%
+\contentsline {chapter}{Annexe \numberline {C}Calcul du polynôme caractéristique $\chi _H$}{24}{appendix.1.C}%
+\contentsline {chapter}{Bibliographie}{27}{section*.17}%
